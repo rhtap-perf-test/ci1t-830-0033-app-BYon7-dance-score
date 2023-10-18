@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-ezkk
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoup_perfscale/ci1t-830-0033-tenant/ci1t-830-0033-app/devfile-sample-ezkk@sha256:4ac5f38b1d85d99e05932e22bd694fb370b974e83000e3f146f21e4557924a54
+        name: my-nodejs
+        resources: {}
+status: {}
